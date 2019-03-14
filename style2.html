@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>What is HTML</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            p {
+                color:black;
+            }
+            #example p {
+                color:Purple;
+            }
+            #example .red {
+                color:red;
+            }
+            #example #green{
+                color:green;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="html">
+            <h1>Wat is HTML?</h1>
+            <p>HTML staat voor Hypertext Markup Language en is de standaard "markup taal" voor Web pagina's. Zoals Word-documenten een .doc-extensie hebben of foto's een .jpg-extensie hebben HTML bestanden een .html-extensie. Browsers (bv. Chrome of Mozilla Firefox) kunnen HTML-bestanden interpreteren en weergeven</p>
+            <h2>Wat is "Hypertext" en een "Markup taal"?</h2>
+            <p>Hypertext betekent een tekst met referenties naar andere teksten, bestanden of web pagina's. Deze referenties of links kunnen intern of extern zijn.</p>
+            <p>Markup taal staat voor een systeem van aantekeningen dat duidelijk te onderscheiden is van de inhoud. In HTML bekomen we dit door te werken met tags. Enkele voorbeelden van dergelijke tags:</p>
+            <ul>                
+                <li>&lt;html> een html-tag gebruiken we om de browser duidelijk te maken dat alles tussen de openings -en sluitingstags html is&lt;/html></li>
+                <li>&lt;head> een header-tag bevat allerhande informatie over de webpagina ipv de inhoud&lt;/head></li>
+                <li>&lt;body> een body-tag duidt het begin van de inhoud van de webpagina aan&lt;/body></li>
+                <li>&lt;p> een p-tag staat voor paragraaf&lt;/p></li>
+                <li>&lt;strong> een strong-tag maakt een tekst vet&lt;/strong></li>
+                <li>&lt;ol> een ol-tag staat voor geOrdende Lijst&lt;/ol></li>
+                <li>&lt;h1> een h1-tag staat voor hoofding 1&lt;/h1></li>
+                <li>&lt;img> een img-tag staat voor een afbeelding (image)></li>
+                <li>&lt;a> een a-tag staat voor anker en gebruiken we voor <a href="https://www.google.com">links</a>&lt;/a></li>
+                <li>&lt;div> een div-tag staat voor division en gebruiken we als een container&lt;/div></li>
+                <li>...</li>
+            </ul>
+            <p>Zoals je kan zien zijn er heel wat verschillende tags. Het is niet belanrijk om al deze van buiten te leren. Er zijn immers verschillende overzichten beschikbaar op het internet bv. <a href="https://www.w3schools.com/tags/">w3schools</a>. Het is wel belangrijk te weten welke tag je wanneer dient te gebruiken.</p>
+            <p>Verder kan het je opvallen dat het merendeel van de tags een opening -en sluitingstags hebben. Toch is dit niet het geval bij alle tags, bv de img-tag.</p>
+            <h2>Wat is het doel?</h2>
+            <p>HTML is 1 van de belangrijkste componenten van webpagina's en functioneert als de inhoud en structuur van een web pagina. We gebruiken het maw om enerzijds de inhoud weer te geven en anderzijds te definiëren wat een hoofding/link/paragraaf/lijst/etc... zijn.</p>
+            <h2>Een voorbeeld van HTML</h2>
+            <p>Klik op de rechtermuisknop en selecteer "View Page Source" of "pagina bron weergeven".</p>
+            <p>Proficiat u heeft net de HTML bekeken waaruit deze pagina bestaat.</p>
+            <h2>Samengevat</h2>
+            <p>De inhoud en structuur van een webpagina schrijven we in HTML. We kunnen de inhoud van verschillende documenten aan elkaar linken en de structuur definiëren we aan met tags.</p>
+            <h2>Een voorbeeld: Fake News</h2>
+            <ol>
+                <li>Volg deze <a target="_blank" href="https://www.techzine.be/nieuws/28634/microsoft-en-becode-zetten-schouders-onder-eerste-belgische-ai-school.html">link</a> naar een artikel over BeCode op www.techzine.be</li>
+                <li>
+                    <p>Klik op je rechtermuisknop en selecteer "inspect" of "inspecteren"</p>
+                    <img src="./img/inspect.png" alt="screenshot of chrome dev tools inspector" style="width:400px;vertical-align:middle;"></li>
+                <li>
+                    <p>Selecteer het meest linkse icoon in de horizontale balk van de developer tools</p>
+                    <img src="./img/selectHighlight.png" alt="screenshot of chrome dev tools inspector" style="width:400px;vertical-align:middle;">
+                </li> 
+                <li>
+                        <p>Hover nu over de titel (een h1-tag) van de webpagina zelf. Merk op dat dit element nu geselecteerd in de HTML onderaan</p>
+                        <img src="./img/highlight.png" alt="screenshot of chrome dev tools inspector" style="width:400px;vertical-align:middle;">
+                </li>
+                <li>
+                        <p>In de HTML onderaan kan je nu de inhoud aanpassen.</p>
+                        <img src="./img/changeHTML.png" alt="screenshot of chrome dev tools inspector" style="width:400px;vertical-align:middle;">
+                </li>  
+                <li>
+                        <p>Schrijf een leuke titel en klik op enter.</p>
+                        <img src="./img/newTitle.png" alt="screenshot of chrome dev tools inspector" style="width:400px;vertical-align:middle;">
+                </li> 
+                <li>
+                    <p>Proficiat! Je hebt net het HTML-bestand in je browser aangepast. Nu zou je bijvoorbeeld een screenshot kunnen nemen en dit delen op sociale media.</p>
+                </li>
+            </ol>
+        </div>
+        <div id="css">
+            <h1>Wat is CSS</h1>
+            <p>CSS staat voor Cascading Style Sheets en gebruiken we om web pagina's te stylen. Zoals HTML bestanden een .html-extensie hebben beschikken CSS bestanden over een .css-extensie. CSS laat ons toe elementen in onze HTML-file selecteren en hun weergave te manipuleren. Zo kunnen we bijvoorbeeld een title extra groot maken en een rode kleur geven, aangeven hoeveel ruimte een bepaald element moet innemen, leuke animaties maken en nog veel meer. We selecteren de HTML-elementen met behulp van selectors (die verschillende gradaties van specifiteit hebben).</p>
+            <h2>Waar schrijven we CSS</h2>
+            <p>We kunnen CSS op 3 plekken invoegen</p>
+            <ul>
+                <li>In een externe file die we linken aan ons HTML-bestand</li>
+                <li>Bovenaan in de "head" (dus niet in de body) van een HTML-bestand</li>
+                <li>In het HTML-element dat we willen stijlen</li>
+            </ul>
+            <h2>Waarom "Cascading"</h2>
+            <p>Cascade is Engels voor waterval. CSS-bestanden werken immers op gelijkaardige wijze, met name van boven naar onder. Mochten we nu twee maal definiëren welke kleur een titel moet hebben telt het onderste argument</p>
+            <p>Naast de ordening is de specifiteit van selectoren van belang. De specifiteit van een selector overschrijft de ordening. Een element zal dus worden weergegeven obv haar meest specifieke selector. Naast de natuurlijke specifiteit van HTML-elementen kunnen we ook een "ID"(#) en/of een "CLASS"(.) meegeven. Waar we een klasse kunnen gebruiken om een groep van HTML-elementen op dezelfde wijze te stylen kunnen we een ID slechts aan 1 enkel HTML toekennen. Een ID is dus specifieker dan een CLASS.</p>
+            <h2>Voorbeeld</h2>
+            <p>We maken een lijst met drie items die elk een paragraaf bevatten</p>
+            &lt;ul id="example"></br>
+            &lt;li>&lt;p>purple&lt;/p>&lt;/li></br>
+            &lt;li>&lt;p class="red">Red&lt;/p>&lt;/li></br>
+            &lt;li>&lt;p id="green" class="red">Green&lt;/p>&lt;/li></br>
+            &lt;/ul></br></br>
+
+            <p>Geef de tekst tussen p-tags een zwarte kleur</p>
+                p {</br>
+                    color:black;</br>
+                }</br>
+            <p>Geef de tekst tussen p-tags met een ID "example" een paarse kleur</p>
+                #example p { </br>
+                color:purple;</br>
+                }</br>
+            <p>Geef de tekst met een ID "example" en een klasse "red" een rode kleur</p>
+                #example .red {</br>
+                color:red;</br>
+                }</br>
+            <p>Geef de tekst met een ID "example" en een ID "green" een groene kleur</p>
+                #example #green{</br>
+                color:green;</br>
+                }</br>
+
+            <h2>Geeft de volgende weergave</h2>
+            <ul id="example">
+                <li><p>Purple</p></li>
+                <li><p class="red">Red</p></li>
+                <li><p id="green" class="red">Green</p></li>
+            </ul>
+            <h2>De kracht van CSS</h2>
+            <p>Bezoek de onderstaande links om de HTML van deze pagina in een andere stijl (ander css-bestand) te bekijken. Merk op dat de structuur en inhoud exact hetzelfde zijn dan deze pagina. We hebben enkel de weergave aangepast.</p>
+            <a href="./style1.html">Voorbeeld 1</a>
+            <a href="./style2.html">Voorbeeld 2</a>
+            <a href="./style3.html">Voorbeeld 3</a>
+        </div>
+        <h2><a href="./puzzle.html">Een CSS puzzel</a></h2> 
+        <h2><a href="https://flukeout.github.io/#">De CSS Diner</a></h2>         
+        
+    </body>
+</html>
