@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Raleway|Raleway+Dots');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*end of normalize.css*/
+
+
+body {
+  font-family: 'Raleway',
+    sans-serif;
+  width: 100vw;
+  line-height: 1.5rem;
+  color: #fff;
+  background: url(img/background-laptop.jpg) fixed;
+  overflow-x: hidden;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+div {
+  width: 90vw;
+}
+
+div p {
+  color: #fff;
+  padding-left: 1rem;
+}
+
+ul {
+  padding: 0 1.5rem;
+}
+
+ol {
+  border: 1px solid #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+ol li {
+  text-transform: uppercase;
+}
+
+ol li p {
+  text-transform: initial;
+  font-style: italic;
+  margin-top: 1rem;
+  padding-left: 0;
+}
+
+ol li p::before {
+  content: 'TO DO: ';
+  color: rgb(206, 0, 0);
+}
+
+ol li p:last-child::before {
+  content: '';
+}
+
+a {
+  color: #fff;
+}
+
+img {
+  width: 80vw !important;
+}
+
+h1 {
+  font-family: 'Fredericka the Great',
+    cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  border-top: 1px dashed rgb(206, 0, 0);
+  border-bottom: 1px dashed rgb(206, 0, 0);
+  padding: 1rem 0;
+  margin: 1rem 0;
+  color: rgb(206, 0, 0);
+}
+
+h2 {
+  font-family: 'Raleway Dots',
+    cursive;
+  font-size: 1.5rem;
+  margin: 2rem 0 .5rem 0;
+  font-weight: 800;
+}
+
+#html ul {
+  border: 1px solid #fff;
+  margin: 1rem 0;
+}
+
+#html ul li {
+  padding: .4rem 0;
+}
+
+#css {
+  margin-top: 3rem;
+}
+
+#css ul li::before {
+  content: ">> ";
+}
+
+#example {
+  background-color: #fff;
+  width: 30vw;
+  margin-left: .5rem;
+  margin-top: .5rem;
+}
+
+#example ul {
+  padding-left: 0;
+}
+
+h2 a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  border: 1px solid rgb(206, 0, 0);
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: rgb(206, 0, 0);
+  text-align: center;
+  width: 250px;
+  display: block;
+}
+
+h2 a::before {
+  content: 'game: ';
+
+}
+
+#css a {
+  text-decoration: none;
+  border: 1px solid rgb(206, 0, 0);
+  border-radius: 5px;
+  padding: .4rem;
+  background-color: rgb(206, 0, 0);
+  text-align: center;
+  width: 120px;
+  margin: 0 auto;
+  display: inline-block;
+  margin: 0;
+}
+
+a:hover {
+  color: rgb(206, 0, 0);
+}
+
+#css a:hover,
+h2 a:hover {
+  font-size: 110%;
+  color: #fff;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+    padding: 3rem;
+    border-top: 2px dashed rgb(206, 0, 0);
+    border-bottom: 2px dashed rgb(206, 0, 0);
+    margin-top: 5rem;
+    width: 95vw;
+  }
+
+  #example {
+    width: 200px;
+  }
+}
