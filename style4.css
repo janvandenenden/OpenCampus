@@ -73,6 +73,9 @@ a {
 a:hover {
   box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
   } 
+  ol li img{
+    width: 85% !important;
+  }
   ul + p a{
     text-decoration: underline; 
     color: blue !important;
@@ -140,6 +143,7 @@ pre{
     line-height: 20px !important;
     padding: 1em;
 }
+
 #css + h2, #css + h2 + h2{
   width: 80%;
   margin: 1em auto;
