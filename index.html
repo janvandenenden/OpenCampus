@@ -2,21 +2,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>What is HTML</title>
+        <title>HTML & CSS</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <style>
-            p {
-                color:black;
+            li {
+            font-size: 20px;
             }
-            #example p {
-                color:Purple;
+            .item {
+            color: red;
             }
-            #example .red {
-                color:red;
-            }
-            #example #green{
-                color:green;
+            #baz {
+            font-size: 30px;
+            font-weight: bold;
             }
         </style>
     </head>
@@ -24,7 +22,7 @@
     <body>
         <div id="html">
             <h1>Wat is HTML?</h1>
-            <p>HTML staat voor Hypertext Markup Language en is de standaard "markup taal" voor Web pagina's. Zoals Word-documenten een .doc-extensie hebben of foto's een .jpg-extensie hebben HTML bestanden een .html-extensie. Browsers (bv. Chrome of Mozilla Firefox) kunnen HTML-bestanden interpreteren en weergeven</p>
+            <p>HTML staat voor Hypertext Markup Language en is de standaard "markup taal" voor Web pagina's. Zoals Word-documenten een .doc-extensie hebben of foto's een .jpg-extensie hebben HTML bestanden een .html-extensie. Browsers (bv. Chrome of Mozilla Firefox) kunnen HTML-bestanden interpreteren en weergeven.</p>
             <h2>Wat is "Hypertext" en een "Markup taal"?</h2>
             <p>Hypertext betekent een tekst met referenties naar andere teksten, bestanden of web pagina's. Deze referenties of links kunnen intern of extern zijn.</p>
             <p>Markup taal staat voor een systeem van aantekeningen dat duidelijk te onderscheiden is van de inhoud. In HTML bekomen we dit door te werken met tags. Enkele voorbeelden van dergelijke tags:</p>
@@ -41,7 +39,7 @@
                 <li>&lt;div> een div-tag staat voor division en gebruiken we als een container&lt;/div></li>
                 <li>...</li>
             </ul>
-            <p>Zoals je kan zien zijn er heel wat verschillende tags. Het is niet belanrijk om al deze van buiten te leren. Er zijn immers verschillende overzichten beschikbaar op het internet bv. <a href="https://www.w3schools.com/tags/">w3schools</a>. Het is wel belangrijk te weten welke tag je wanneer dient te gebruiken.</p>
+            <p>Zoals je kan zien zijn er heel wat verschillende tags. Het is niet belanrijk om al deze van buiten te leren. Er zijn immers verschillende overzichten beschikbaar op het internet bv. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozzila Developer Network (MDN)</a>. Het is wel belangrijk te weten welke tag je wanneer dient te gebruiken.</p>
             <p>Verder kan het je opvallen dat het merendeel van de tags een opening -en sluitingstags hebben. Toch is dit niet het geval bij alle tags, bv de img-tag.</p>
             <h2>Wat is het doel?</h2>
             <p>HTML is 1 van de belangrijkste componenten van webpagina's en functioneert als de inhoud en structuur van een web pagina. We gebruiken het maw om enerzijds de inhoud weer te geven en anderzijds te definiëren wat een hoofding/link/paragraaf/lijst/etc... zijn.</p>
@@ -92,35 +90,44 @@
             <p>Naast de ordening is de specifiteit van selectoren van belang. De specifiteit van een selector overschrijft de ordening. Een element zal dus worden weergegeven obv haar meest specifieke selector. Naast de natuurlijke specifiteit van HTML-elementen kunnen we ook een "ID"(#) en/of een "CLASS"(.) meegeven. Waar we een klasse kunnen gebruiken om een groep van HTML-elementen op dezelfde wijze te stylen kunnen we een ID slechts aan 1 enkel HTML toekennen. Een ID is dus specifieker dan een CLASS.</p>
             <h2>Voorbeeld</h2>
             <p>We maken een lijst met drie items die elk een paragraaf bevatten</p>
-            &lt;ul id="example"></br>
-            &lt;li>&lt;p>purple&lt;/p>&lt;/li></br>
-            &lt;li>&lt;p class="red">Red&lt;/p>&lt;/li></br>
-            &lt;li>&lt;p id="green" class="red">Green&lt;/p>&lt;/li></br>
-            &lt;/ul></br></br>
 
-            <p>Geef de tekst tussen p-tags een zwarte kleur</p>
-                p {</br>
-                    color:black;</br>
-                }</br>
-            <p>Geef de tekst tussen p-tags met een ID "example" een paarse kleur</p>
-                #example p { </br>
-                color:purple;</br>
-                }</br>
-            <p>Geef de tekst met een ID "example" en een klasse "red" een rode kleur</p>
-                #example .red {</br>
-                color:red;</br>
-                }</br>
-            <p>Geef de tekst met een ID "example" en een ID "green" een groene kleur</p>
-                #example #green{</br>
-                color:green;</br>
-                }</br>
+            <pre>
+                &lt;ul>
+                    &lt;li>foo&lt;/li>
+                    &lt;li class="item">bar&lt;/li>
+                    &lt;li id="baz" class="item">baz&lt;/li>
+                &lt;/ul>
+            </pre>
+
+            <p>Selecteer de lijst-items en zet hun font-size op 20px</p>
+                <pre>
+                    li {
+                        font-size: 20px;
+                        }
+                </pre>
+            <p>Selecteer de elementen van de klasse .item en zet hun tekstkleur op rood</p>   
+                <pre>
+                    .item {
+                        color: red;
+                        }
+                </pre>
+            <p>Selecteer het element met ID baz en zet de font-size op 30px en maak het vetgedrukt</p>
+                <pre>
+                    #baz {
+                        font-size: 30px;
+                        font-weight: bold;
+                        }
+                </pre>
 
             <h2>Geeft de volgende weergave</h2>
-            <ul id="example">
-                <li><p>Purple</p></li>
-                <li><p class="red">Red</p></li>
-                <li><p id="green" class="red">Green</p></li>
+
+            <ul>
+                <li>foo</li>
+                <li class="item">bar</li>
+                <li id="baz" class="item">baz</li>
             </ul>
+
+   
             <h2>De kracht van CSS</h2>
             <p>Bezoek de onderstaande links om de HTML van deze pagina in een andere stijl (ander css-bestand) te bekijken. Merk op dat de structuur en inhoud exact hetzelfde zijn dan deze pagina. We hebben enkel de weergave aangepast.</p>
             <a href="./style1.html">Voorbeeld 1</a>
