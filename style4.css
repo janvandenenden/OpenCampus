@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+html {
+    scroll-behavior: smooth;
+  }
+html, body{
+  font-family: 'Patrick Hand SC', cursive;
+    margin: 0;
+    background-color:#FFFFFA;
+    color:#1E1E24;
+    text-align: justify;
+    line-height: 1.7em;
+    font-size: 1.2em;
+}
+#html, #css{
+    width:80%;
+    margin: 0 auto;
+    background: #ffff;
+}
+#html h1:before{
+  background-image:url('./img/html5.png');
+}
+
+#css h1:before{
+  background-image:url('./img/css.png');
+}
+
+h1:before {
+  content: '';
+    position: relative;
+    background-size: contain;
+    display: inline-block;
+    width: 100px;
+    left: 0em;
+    bottom: -0.2em;
+    height: 100px;
+  background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    padding: 0.5em 0;
+    letter-spacing: 5px;
+    animation: moveInUp 1s ease-out;
+}
+h2{
+    font-size: 1.4em;
+    letter-spacing: .5px;
+}
+p{
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  color:#41403E;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0rem 0.5rem;
+    transition: all .5s ease;
+    letter-spacing: 1px;
+    border: solid 7px #41403E;
+    outline: none;
+    box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+a:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+  } 
+  ul + p a{
+    text-decoration: underline; 
+    color: blue !important;
+    border: none;
+    padding: 0;
+    box-shadow: none !important;
+  }
+  ul, ol {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+    counter-reset: li-counter;
+    }
+  ul li,  ol li{
+      position: relative;
+      margin-bottom: 1.5em;
+      padding: 0.5em;
+      background-color: #F0D756;
+      padding-left: 58px;
+      }
+  ul li:hover, ul li:hover{
+        box-shadow:inset -1em 0 #6CD6CC;
+        -webkit-transition: box-shadow 0.5s; /* For Safari 3.1 to 6.0 */
+        transition: box-shadow 0.5s;
+    }
+  ul li:before , ol li:before {
+      position: absolute;
+      top: -0.3em;
+      left: -0.5em;
+      width: 1.8em;
+      height: 1.2em;
+      font-size: 1.5em !important;
+      line-height: 1.2;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      background-color: #6CD6CC;
+      transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+      z-index: 99;
+      overflow: hidden;
+      content: counter(li-counter);
+      counter-increment: li-counter;
+      }
+pre{
+  border-top: 30px solid #252525;
+    box-shadow: inset 0 3px 0 red, inset 0 3px 5px rgba(0,0,0,.5), 0 0 15px rgba(0,0,0,.28);
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #FFFFAF;
+    background-image: -webkit-linear-gradient(90deg, transparent 71px, #CB764A 69px, #CB764A 74px, transparent 74px, transparent 79px, #CB764A 79px, #CB764A 81px, transparent 80px), -webkit-linear-gradient(#A4CE9A .1em, transparent .1em);
+    background-image: -moz-linear-gradient(90deg, transparent 71px, #CB764A 69px, #CB764A 74px, transparent 74px, transparent 79px, #CB764A 79px, #CB764A 81px, transparent 80px), -moz-linear-gradient(#A4CE9A .1em, transparent .1em);
+    background-image: -o-linear-gradient(90deg, transparent 71px, #CB764A 69px, #CB764A 74px, transparent 74px, transparent 79px, #CB764A 79px, #CB764A 81px, transparent 80px), -o-linear-gradient(#A4CE9A .1em, transparent .1em);
+    background-image: -ms-linear-gradient(90deg, transparent 71px, #CB764A 69px, #CB764A 74px, transparent 74px, transparent 79px, #CB764A 79px, #CB764A 81px, transparent 80px), -ms-linear-gradient(#A4CE9A .1em, transparent .1em);
+    background-image: linear-gradient(90deg, transparent 71px, #CB764A 69px, #CB764A 74px, transparent 74px, transparent 79px, #CB764A 79px, #CB764A 81px, transparent 80px), linear-gradient(#A4CE9A .1em, transparent .1em);
+    -webkit-background-size: 100% 20px;
+    -moz-background-size: 100% 20px;
+    background-size: 100% 20px;
+    line-height: 20px !important;
+    padding: 1em;
+}
+#css + h2, #css + h2 + h2{
+  width: 80%;
+  margin: 1em auto;
+}
+  
+@keyframes moveInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    
+    80% {
+      transform: translateY(10px);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
