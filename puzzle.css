@@ -1,0 +1,54 @@
+body{
+    background-color: #FAFAFF;
+    line-height: 2em;
+}
+
+#hero{
+    text-align:center;
+    height:70vh;
+    background-color: #FF6663;
+    color:#FAFAFF;
+    display: flex;
+    align-items: center;
+}
+
+#imageDevTools{
+    background-image: url('./img/cssDevTools.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height:400px;
+}
+
+.explanation{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+}
+
+.row{
+    padding:30px 0px;
+}
+
+#youdidit img {
+    max-width:100%;
+    visibility:hidden;
+    display:flex;
+    justify-content: center;
+}
+
+
+.btn {
+    background-color: #FF6663;
+    color:#FAFAFF;
+    margin:30px 0px;
+}
+
+.btn:hover {
+    background-color: #FAFAFF;
+    color:#FF6663;
+    border:1px solid #FF6663;
+
+}
+
