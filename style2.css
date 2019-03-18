@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  background-image: url("https://www.becode.org/img/socialshare.png"), url("https://www.becode.org/partners/images/SmallLogo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left top, right top;
+  background-size: 150px, 100px;
+  background-color: #245060;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  margin: auto 150px auto 160px;
+  text-align: justify;
+  line-height: 1.8em;
+}
+
+#html {
+  margin: 100px auto;
+}
+
+#html h2:nth-of-type(5), ol {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  padding: 2em 1.5em;
+  margin: 0;
+  text-align: center;
+}
+
+#html h2:nth-of-type(5) {
+  border-top: 1px solid;
+}
+
+ol {
+  border-bottom: 1px solid;
+  list-style-type: upper-roman;
+  list-style-position: inside;
+}
+
+ol li p {
+  display: inline;
+}
+
+ol li img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
+ol li {
+  margin-bottom: 2em;
+}
+
+
+h1 {
+  margin: 2em auto;
+  text-align: center;
+  border: 5px double;
+  border-radius: 5px;
+  padding: 30px 0px;
+}
+
+#html h2, #css h2 {
+  text-decoration: underline;
+  font-style: italic;
+  margin: 2em auto;
+}
+
+ul li {
+  list-style-image: url("img/logo_Becode_small.png");
+}
+
+ul {
+  margin-bottom: 2em;
+}
+
+a {
+  color: red;
+}
+
+pre {
+  margin-left: 2em;
+  background-color: #cdd0d6;
+  color: black;
+}
+
+#css h2:nth-of-type(4), #css ul:last-of-type {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  margin: 0;
+  text-align: center;
+  padding: 1em 1em;
+}
+
+#css h2:nth-of-type(4) {
+  border-top: 1px solid;
+  margin-top: 2em;
+}
+
+#css ul:last-of-type {
+  border-bottom: 1px solid;
+  margin-bottom: 4em;
+}
+
+#css ul:last-of-type li {
+  list-style-position: inside;
+  list-style-type: square;
+  list-style-image: none;
+  margin-right: 1em;
+  margin-bottom: 0.4em;
+}
+
+#css a, h2 a {
+  margin-right: 4em;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+h2:nth-last-child(1), h2:nth-last-child(2) {
+  margin: 50px auto;
+  justify-content: center;
+}
+
+#css a:hover, h2 a:hover {
+  color: red;
+}
