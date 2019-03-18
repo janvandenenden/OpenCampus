@@ -1,0 +1,1 @@
+console.log("Geweldig dat je wat rondkijkt in de Chrome Developer Tools. Misschien als je wat verder zoekt kan je een manier vinden om meerdere elementen tegelijkertijd te ontdekken.")
